@@ -1,0 +1,19 @@
+Terminal Commands
+ls -> list files in directory
+cd -> goes to directory
+    -examples: 
+    cd directory1 -> go to directory1 in folder
+    cd .. -> goes to parent of that directory
+
+Compile java :
+javac filename.java
+
+run Java: 
+java filename
+
+int = integer
+double = number with decimal
+string = "words"
+boolean = true, false
+char = 'A', 'B', 'C'
+
