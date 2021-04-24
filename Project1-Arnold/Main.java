@@ -9,7 +9,6 @@ public class Main {
         // System.out.println("Arnold" + " 82\n" + "Fairmont Preparatory Academy");
         // int theage = 82;
         // System.out.println(theage + (2070-2021));
-        // checking
 
         int i = 0;
         i++;

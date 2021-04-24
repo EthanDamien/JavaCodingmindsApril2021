@@ -1,0 +1,31 @@
+Dungeons and Dragons Character Sheet
+You and your friends have decided to start a new D&D campaign, "Sleigh the Vampire Lord, Santus". You decided that instead of writing out your characters' stats and story on a piece of paper, it would be easier and more fun to code a super intelligent AI and teach it to become your character. Here's what you need to do in order to create the D&D Character Program.
+
+Prompt the user to enter in their character's first name initial and save it to a variable
+Prompt the user to enter in their character's middle initial and save it to a variable
+Prompt the user to enter in their character's last name and save it to a variable
+Prompt the user to enter in their character's health points and save it to a variable
+Level one character HPs range between [10, 25]
+More "tanky" characters will have more HP
+Prompt the user to enter in their character's armor rating and save it to a variable
+Level one character armor ratings range between [20, 40]
+More "tanky" characters will have more HP
+Prompt the user to enter in their character's class and save it to a variable
+You can be anything you want, just make sure your stats reflect your class
+For example, a monk, warrior, bard, or snake oil salesman
+Prompt the user to enter in their character's spell slots and save it to a variable
+The amount of spell slots depends on your class
+Magic people will have up to 6 spell slots
+Weapon using people will have up to 3 spell slots
+Prompt the user to enter in their character's preferred weapon type and save it to a variable
+Prompt the user to enter in their character's special, signature attack or spell save it to a variable
+Prompt the user to enter in their character's origin and save it to a variable
+For example, my character hails from the abyssal depths of Michigan lake
+Finally, we must ask the question that everybody eventually asks themselves: is your character undead?
+Prompt the user to enter in their character's undead status and save it to a variable
+Once you have asked and captured all the above information, have your program print out the information in a neatly formatted paragraph. Have fun describing your characters and don't feel like you need to follow my format. For example:
+
+"I am Sparky O. McNeil and I am a cabbage salesman. I have 13 HP, 21 armor, and 1 spell slot. 
+My signature spell is Cabbage Baggage, a touch range spell that fills the target's bag with cabbage. 
+My preferred weapon is my mind. My hometown is in a dimension much different than this one called Veggie Tales. 
+Am I undead? True. "
