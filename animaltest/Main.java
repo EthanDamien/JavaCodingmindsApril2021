@@ -16,9 +16,8 @@ class Main {
       // System.out.println(dog.getSound());
       // System.out.println(dog.getheightplusweight());
 
-      // Animal cat = new Animal("Mittens", "Meow");
-      // cat.getName(); 
+      Animal cat = new Animal("Mittens", "Meow");
+      cat.getName(); 
 
-      System.out.println("Hello World");
     }
   }
