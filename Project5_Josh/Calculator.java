@@ -7,23 +7,24 @@ public class Calculator {
         System.out.println("Choose which one to use:");
         String option = null;
         option = sc.nextLine();
-        if(option == "+"){
+        if(option.equals("+")){
+            System.out.println("Hit");
             addition();
         }
-        if(option == "-"){
+        if(option.equals("-")){
             subtraction();
         }
-        if(option == "*"){
+        if(option.equals("*")){
             multiplication();
         }
-        if(option =="/"){
+        if(option.equals("/")){
             division();
 
         }
-        if(option == "^"){
+        if(option.equals("^")){
             exponent();
         }
-        if(option == "%"){
+        if(option.equals("%")){
             remainder();
         }
     }
@@ -37,7 +38,7 @@ public class Calculator {
         System.out.println("Enter Second Number:");
         num2 = sc.nextInt();
 
-        System.out.println("Sum: "+ num1 + num2 );
+        System.out.println("Sum: "+ (num1 + num2) );
     }
     public static void subtraction(){
         Scanner sc = new Scanner(System.in);
@@ -48,7 +49,7 @@ public class Calculator {
 
         System.out.println("Enter Second Number:");
         num2 = sc.nextInt();
-        System.out.println("Difference:" + num1 + num2 );
+        System.out.println("Difference:" + (num1 - num2) );
 
     }
     public static void multiplication(){
@@ -60,7 +61,7 @@ public class Calculator {
 
         System.out.println("Enter Second Number:");
         num2 = sc.nextInt();
-        System.out.println("Product:" +num1+num2);
+        System.out.println("Product:" +(num1*num2));
     }
     public static void division(){
         Scanner sc = new Scanner(System.in);
@@ -71,7 +72,7 @@ public class Calculator {
 
         System.out.println("Enter Second Number(divisor):");
         num2 = sc.nextInt();
-        System.out.println("Quotient:" +num1 + num2);
+        System.out.println("Quotient:" +(num1 / num2));
     }
     public static void exponent(){
         Scanner sc = new Scanner(System.in);
@@ -98,6 +99,6 @@ public class Calculator {
 
         System.out.println("Enter Second Number(divisor):");
         num2 = sc.nextInt();
-        System.out.println("Remainder:" + num1%num2);
+        System.out.println("Remainder:" + (num1%num2));
     }
 }
