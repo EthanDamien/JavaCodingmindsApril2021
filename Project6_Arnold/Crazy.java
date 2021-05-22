@@ -8,6 +8,7 @@ public class Crazy {
         double[] gpa = {
         1.1, 1.2, 1.4, 1.5, 1.6, 1.7, 2.2
         };
+        updateGPA(students, gpa);
         System.out.println(getGPA("Kevin", students, gpa));
     }
     
@@ -27,7 +28,18 @@ public class Crazy {
         }
     }
 
-    public static void updateGPA(String name, double newGPA, String[]students, double[]gpa){
+    public static void updateGPA(String[]students, double[]gpa){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter student name: ");
+        String student_name = sc.nextLine();
+        System.out.println("enter the new GPA: ");
+        double new_gpa = sc.nextDouble();
+        for (int i = 0; i < students.length; i++){
+            if((students[i]).equals(student_name)){
+                gpa[i] = new_gpa;
+            }
+        }
+
 
     }
     
