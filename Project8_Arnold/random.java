@@ -84,7 +84,8 @@ import java.lang.Math;
     }
 
     public static int surfaceAreaOfCube(int side){
-        return (6* areaOfSquare(side));
+        return (6 * areaOfSquare(side));
     }
 
 }
+
