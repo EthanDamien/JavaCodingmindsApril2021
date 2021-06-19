@@ -28,13 +28,42 @@ public class fun {
             if(playerInput.equals("0")){
                 points+=history();
             }
+            else if (playerInput.equals("1")) {
+                points+=math();
+            }
+            else if (playerInput.equals("2")) {
+                points+=minecraft();
+            }
+            else if (playerInput.equals("3")) {
+                points+=minecraft();
+            }
             System.out.println("Round: "+ round);
             round++;
-            System.out.println(playerInput);
+            System.out.println("Current score: " + points);
         }
     }
 
     public static int history(){
+        Map<String, String> questions = new HashMap<String, String>();
+
+        questions.put("Who was the first president of the USA?\nA.Abraham Lincoln B.Morgan Freeman C.Donald Trump D.George Washington", "D");
+        questions.put("2Who was the first president of the USA?\nA.Abraham Lincoln B.Morgan Freeman C.Donald Trump D.George Washington", "D");
+        questions.put("3Who was the first president of the USA?\nA.Abraham Lincoln B.Morgan Freeman C.Donald Trump D.George Washington", "D");
+
+        return askQuestion(questions);
+    }
+
+    public static int math(){
+        Map<String, String> questions = new HashMap<String, String>();
+
+        questions.put("Who was the first president of the USA?\nA.Abraham Lincoln B.Morgan Freeman C.Donald Trump D.George Washington", "D");
+        questions.put("2Who was the first president of the USA?\nA.Abraham Lincoln B.Morgan Freeman C.Donald Trump D.George Washington", "D");
+        questions.put("3Who was the first president of the USA?\nA.Abraham Lincoln B.Morgan Freeman C.Donald Trump D.George Washington", "D");
+
+        return askQuestion(questions);
+    }
+
+    public static int minecraft(){
         Map<String, String> questions = new HashMap<String, String>();
 
         questions.put("Who was the first president of the USA?\nA.Abraham Lincoln B.Morgan Freeman C.Donald Trump D.George Washington", "D");

@@ -26,9 +26,51 @@ public class triviagame {
             if(playerInput.equals("0")){
                 points+=history();
             }
+            else if(playerInput.equals("1")){
+                points+=math();
+            }
+            else if(playerInput.equals("2")){
+                points+=minecraft();
+            }
+            else if(playerInput.equals("3")){
+                Random random = new Random();
+                int rand = random.nextInt(3);
+                switch(rand){
+                    case 0:
+                        System.out.println("This is a History Question");
+                        points+=history();
+                        break;
+                    case 1:
+                        System.out.println("This is a Math Question");
+                        points+=math();
+                        break;
+                    case 2:
+                        System.out.println("This is a Minecraft Question");
+                        points+=minecraft();
+                        break;
+                }
+
+                switch(answer){
+                    case "Good":
+                        System.out.println("This is a History Question");
+                        points+=history();
+                        break;
+                    case "Bad":
+                        System.out.println("This is a Math Question");
+                        points+=math();
+                        break;
+                    case "Ugly":
+                        System.out.println("This is a Minecraft Question");
+                        points+=minecraft();
+                        break;
+                }
+            }
+            else{
+                System.out.println("Please Enter a Valid Number");
+            }
             System.out.println("Round: "+ round);
             round++;
-            System.out.println(playerInput);
+            System.out.println("Current Points: " +points);
         }
     }
 
@@ -38,6 +80,30 @@ public class triviagame {
         questions.put("Who was the first president of the USA?\nA.Abraham Lincoln B.Morgan Freeman C.Donald Trump D.George Washington", "D");
         questions.put("2Who was the first president of the USA?\nA.Abraham Lincoln B.Morgan Freeman C.Donald Trump D.George Washington", "D");
         questions.put("3Who was the first president of the USA?\nA.Abraham Lincoln B.Morgan Freeman C.Donald Trump D.George Washington", "D");
+        questions.put("Who was the first president of the USA?\nA.Abraham Lincoln B.Morgan Freeman C.Donald Trump D.George Washington", "D");
+        questions.put("2Who was the first president of the USA?\nA.Abraham Lincoln B.Morgan Freeman C.Donald Trump D.George Washington", "D");
+        questions.put("3Who was the first president of the USA?\nA.Abraham Lincoln B.Morgan Freeman C.Donald Trump D.George Washington", "D");
+        questions.put("Who was the first president of the USA?\nA.Abraham Lincoln B.Morgan Freeman C.Donald Trump D.George Washington", "D");
+        questions.put("2Who was the first president of the USA?\nA.Abraham Lincoln B.Morgan Freeman C.Donald Trump D.George Washington", "D");
+        questions.put("3Who was the first president of the USA?\nA.Abraham Lincoln B.Morgan Freeman C.Donald Trump D.George Washington", "D");
+
+        return askQuestion(questions);
+    }
+
+    public static int minecraft(){
+        Map<String, String> questions = new HashMap<String, String>();
+
+        questions.put("How many blocks to create a Nether Portal", "10");
+        questions.put("Naming Sheep Jeb_ will make it do what?\nA. Eat B. Baa C. Die D. Rainbow", "D");
+
+        return askQuestion(questions);
+    }
+
+    public static int math(){
+        Map<String, String> questions = new HashMap<String, String>();
+
+        questions.put("1 + 1?", "2");
+        questions.put("sin(90)?", "1");
 
         return askQuestion(questions);
     }
